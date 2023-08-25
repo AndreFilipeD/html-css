@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Color, Range e Image</h1>
+    <form action="bom.php" method="post">
+        <p>
+            <label for="icolor">Cor: </label><input type="color" nome="cor" id="icor"><br>
+            <label for="inivel">Nivel: </label><input type="range" nome="nivel" id="inivel" min="1" max="10" value="5"><br>
+            <label for="iarq"></label>Foto de perfil: <input type="file" nome="arq" id="iarq"><br>
+            <input type="submit" value="Enviar Dados">
+            <input type="reset" value="Resetar tudo">
+        </p>
+    </form>
+</body>
+</html>
