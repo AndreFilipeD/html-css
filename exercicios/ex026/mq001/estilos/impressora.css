@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+*{
+    margin: 10px;
+    padding: 10px;
+    font-family:'Courier New', Courier, sans-serif monospace;
+}
+menu{
+    display: none;
+}
+main::after{
+    content: 'Site criado por André Filipe Domingues - 28/08/2023 - Estudo CursoEmVídeo';
+}
