@@ -10,7 +10,24 @@ Desktop: >992px até 1200px
 Grandes telas: acima de 1200px
 */
 @media print{
-
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }/* Background para impressão é desnecessário */
+    img#phone{
+        display: none;
+    }
+    img#print{
+        display: block;
+        margin: auto;
+    }
+    main::after{
+        content: "Site foi feito por André Filipe Domingues, para o projeto de midia queries do CursoEmVideo";
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET */
@@ -40,5 +57,14 @@ Grandes telas: acima de 1200px
 }
 
 @media screen and (min-width: 1200px){ /*GRANDES TELAS*/
-    
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tv{
+        display: block;
+        margin: auto;
+    }
 }
