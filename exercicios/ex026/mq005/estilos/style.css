@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.05em;
+}
+body{
+    background-color: lightgray;
+}
+header{
+    background-color: gray;
+}
+header > h1{
+    padding: 20px;
+    font-size: 1.6em;
+    color: white;
+}
+menu{
+    display: block;
+    margin: auto;
+}
+header > menu > ul{
+    background-color: rgb(92, 92, 92);
+}
+
+header > menu > ul > a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+}
+header > menu > ul > a > li:hover{
+    background-color: gray;
+}
+header > menu > ul > a > li{
+    border-bottom: 1px solid white;
+}
+main{
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+article h2{
+    padding-bottom: 15px;
+}
+article p{
+    padding-bottom: 15px;
+}
