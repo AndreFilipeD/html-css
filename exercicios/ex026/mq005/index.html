@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTananho()">
     <header>
-        <h1>MEU SITE</h1>
+        <h1>MEU SITE - menu adaptavel</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
@@ -49,6 +49,13 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+        function mudouTananho(){
+            if (window.innerWidth >= 922){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
